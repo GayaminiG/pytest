@@ -2,7 +2,7 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 test:
-	"C:/Program Files/Python311/python.exe" -m pytest -vv testhello.py
+	"C:/Program Files/Python311/python.exe" -m pytest --cov=hello -vv testhello.py
 format:
 	black *.py
 lint:
